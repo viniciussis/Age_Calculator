@@ -65,8 +65,14 @@ body {
   max-width: 4rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  caret-color: var(--purple);
   color: var(--off-black);
   border: 1px solid var(--light-grey);
+}
+
+.fields__input:focus {
+  border-color: var(--purple);
+  outline: var(--purple);
 }
 
 .form__button {
@@ -81,11 +87,16 @@ body {
 .button {
   background-color: var(--purple);
   border-style: none;
+  transition: 1s;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   position: absolute;
   color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--off-black);
 }
 
 .mainContainer__result {
@@ -107,7 +118,7 @@ body {
 }
 
 .footer__link { 
-  color: hsl(228, 45%, 44%);
+  color: var(--purple);
   text-decoration: none;
   transition: 1s;
 }
