@@ -12,31 +12,53 @@
 </head>
 <body>
   <main class="mainContainer">
-    <form class="mainContainer__form">
+    <div class="mainContainer__form">
       <div class="form__fields">
         <div class="fields">
           <label class="fields__label" for="day">Day</label>
-          <input class="fields__input" type="number" name="day" id="day" placeholder="DD">
+          <input 
+            class="fields__input" 
+            type="number" 
+            name="day" 
+            id="day" 
+            min="1" 
+            max="31" 
+            placeholder="DD"
+          >
         </div>
         <div class="fields">
           <label class="fields__label" for="month">Month</label>
-          <input class="fields__input" type="number" name="month" id="month" placeholder="MM">
+          <input 
+            class="fields__input" 
+            type="number" name="month" 
+            id="month" 
+            min="1" 
+            max="12" 
+            placeholder="MM"
+          >
         </div>
         <div class="fields">
           <label class="fields__label" for="year">Year</label>
-          <input class="fields__input" type="number" name="year" id="year" placeholder="YYYY">
+          <input class="fields__input" 
+            type="number" 
+            name="year" 
+            id="year" 
+            min="1000" 
+            max="2024" 
+            placeholder="YYYY"
+          >
         </div>  
       </div>
       <div class="form__button">
-        <button class="button" type="submit">
+        <button id="button" type="button">
           <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 12l7 7m0 0l7-7m-7 7V5"/></svg>
         </button>
       </div>
-      </form>
+    </div>
     <div class="mainContainer__result">
-      <strong class="result__data">--</strong> years<br/>
-      <strong class="result__data">--</strong> months<br/>
-      <strong class="result__data">--</strong> days<br/>
+      <strong id="years" class="result__data">--</strong> years<br/>
+      <strong id="months" class="result__data">--</strong> months<br/>
+      <strong id="days" class="result__data">--</strong> days<br/>
     </div>  
   </main>
   <footer class="footer">
@@ -44,4 +66,5 @@
     Coded by <a class="footer__link" href="https://github.com/viniciussis" target="_blank">Vinícius S Santos</a>.
   </footer>
 </body>
+<script src="script.js"></script>
 </html>
