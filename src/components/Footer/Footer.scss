@@ -1,0 +1,26 @@
+@use '../../assets/styles/variables';
+
+.footer { 
+  width: 100%;
+  padding: 1rem 3rem;
+  position: fixed;
+  bottom: 0;
+
+  font-size: 1rem; 
+  text-align: center;
+
+  .message__link { 
+    color: variables.$purple;
+    text-decoration: none;
+    transition: 1s;
+  }
+  
+  .message__link:hover {
+    color: variables.$gold;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
