@@ -9,11 +9,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--off-white);
+  background-color: variables.$off-white;
 }
 
 .mainContainer {
-  background-color: variables.$purple;
+  background-color: variables.$white;
   width: 18rem;
   height: 25rem;
   padding: 1rem;

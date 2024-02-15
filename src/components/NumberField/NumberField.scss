@@ -1,0 +1,36 @@
+@use '../../assets/styles/variables';
+
+.fields {
+  display: flex;
+  flex-direction: column;
+
+  .fields__label {
+    color: variables.$smokey-grey;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
+
+  .fields__input {
+    font-size: 1.25rem;
+    font-weight: 800;
+    width: 4rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    caret-color: variables.$purple;
+    color: variables.$off-black;
+    border: 1px solid variables.$light-grey;
+
+    &:focus {
+      border-color: variables.$purple;
+      outline: variables.$purple;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .fields__input {
+      width: 7rem;
+    }
+  }
+}
+

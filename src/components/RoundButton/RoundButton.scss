@@ -1,0 +1,22 @@
+@use '../../assets/styles/variables.scss';
+
+.button {
+  background-color: variables.$purple;
+  border-style: none;
+  cursor: pointer;
+  transition: 1s;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  color: variables.$white;
+
+  &:hover {
+    background-color: variables.$off-black;
+  }
+
+  .button__img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
