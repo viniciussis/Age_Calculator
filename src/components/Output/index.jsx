@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import './Output.scss'
 
 const Output = ({ age }) => {
@@ -5,24 +6,28 @@ const Output = ({ age }) => {
     <div className="output">
       <p>
         <strong id="years" className="output__age">
-          --
-        </strong>
+          {age.years == null ? '--' : age.years}
+        </strong>{' '}
         years
       </p>
       <p>
         <strong id="months" className="output__age">
-          --
-        </strong>
+          {age.months == null ? '--' : age.months}
+        </strong>{' '}
         months
       </p>
       <p>
         <strong id="days" className="output__age">
-          --
-        </strong>
+          {age.days == null ? '--' : age.days}
+        </strong>{' '}
         days
       </p>
     </div>
   )
+}
+
+Output.propTypes = {
+  age: PropTypes.object,
 }
 
 export default Output

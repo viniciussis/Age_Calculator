@@ -11,6 +11,7 @@ const NumberField = ({ label, max, min, placeholder }) => {
         className="fields__input"
         type="number"
         name={label}
+        id={label}
         min={min}
         max={max}
         placeholder={placeholder}
